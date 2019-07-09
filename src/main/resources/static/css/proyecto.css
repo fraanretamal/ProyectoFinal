@@ -1,0 +1,80 @@
+.container-fluid{
+    width: 100%;
+    height: 100%;
+}
+
+
+.encabezado{
+    text-align: center;
+    background-color: b3d7ff;
+}
+.index{
+    background-color:rgba(121, 17, 95, 0.25) ;
+    margin:3%;
+    border-radius: 10px;
+    padding: 6%;
+}
+.centrar{
+    text-align: center;
+}
+.jumbotron{
+    background-color: #7f0fe7a6;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+}
+.link-seccion{
+    
+    background-color: b3d7ff ;
+
+    }
+    .link-seccion:hover{
+        background-color: rgb(48, 196, 196);
+        
+    }
+ 
+.fondo{
+    background-image: url(../IMG/fondoprincipal.jpg);
+    width: 100%;
+    height: 100%;
+}    
+    
+.fondo2{
+    background-image: url(../IMG/fondopagprincipal.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.fondoPrincipal{
+    background-image: url(../IMG/fondopagprincipal.jpg);
+    width: 100%;
+    height: 100%;
+} 
+  
+
+.encabezado{
+    background-color: rgba(245, 245, 245, 0.836);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.5%;
+
+}
+.table {
+	width: 75%;
+    height: 300px;
+    margin: 30px;
+    background-color: whitesmoke;
+}
+
+.consultas{
+    background-image: url(../IMG/fondoprincipal.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+} 
+
+.card{
+    padding:3%;
+    background-color: silver;
+}

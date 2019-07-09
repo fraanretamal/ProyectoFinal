@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Consultas</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/proyecto.css">
+</head>
+
+<body>
+    <div class="consultas">
+        <div class="container-fluid">
+              
+                <div class="encabezado">
+                        <form class="form-inline ">
+                                <a class="btn btn-secondary btn-sm ml-auto " href="/principal"> Volver </a>
+                              </form>
+        
+                        <div class="row">
+        
+                            <div class="col-3">
+                                <h1 class="centrar"> BEAUTY WEB </h1>
+                            </div>
+                            <div class="col-3">
+                                <img src="../IMG/labioslogo.png" widht="50" height="50">
+                            </div>
+        
+                        </div>
+            <div class="row justify-content-center">
+
+                <div class="card">
+                    <div class="card-header">
+                        Profesional : <span th:text="${Profesional}"></span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre tipo de servicio: <span th:text="${Nombre}"></span></h5>
+                        <p class="card-text">Info del servicio : <span th:text="${Descripcion}"></span> </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailUser">Aqui podra visualizar el correo de la persona que ofrece el servicio
+                            solicitado :
+                            
+                            <span  th:text="${Email}"> </span>
+                        </label>
+                       
+                    </div>
+
+
+                    <div class="container-fluid container-consultas">
+                        <div class="row justify-content-center">
+                            <div id="formulario" class="formulario-consultas col-6">
+                                <form th:action="@{/Consultas}" method="get">
+                                    <div class="form-group">
+                                        <label for="nombre"> Nombre </label>
+                                        <input type="text" class="form-control" id="nombre">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="edad"> Comentario</label>
+                                        <input type="text" class="form-control" id="edad" 
+                                    >
+                                    </div>
+
+                                    <a href="/principal" class="btn btn-secondary">Enviar</a>
+                                    <button type="reset" class="btn btn-light">Limpiar Datos</button>
+                                    <p></p>
+
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
